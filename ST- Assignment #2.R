@@ -12,7 +12,7 @@ num <- as.numeric(num)
 
 # Check if the user input is a 3 digit number. If not, print an error message and quit.
 
-if (is.na(num) || num < 100) { # Should I also add > 999 to the if statement??
+if (is.na(num) || num < 100 || num > 999) {
   print("Sorry, your input is invalid. Exiting program.")
 } else {
 
