@@ -12,13 +12,13 @@ num <- as.numeric(num)
 
 # Check if the user input is a 3 digit number. If not, print an error message and quit.
 
-if (is.na(num) || num < 100 || num > 999) {
+if (is.na(num) || num < 100 || num > 999) { #good use of condition to ensure it's a 3 digit number (could maybe also try to eliminate decimal numbers)
   print("Sorry, your input is invalid. Exiting program.")
 } else {
 
 # Use strsplit function to isolate digits in the num string and set them as numeric.
   
-digits <- as.numeric(strsplit(as.character(num),"")[[1]])
+digits <- as.numeric(strsplit(as.character(num),"")[[1]]) #Nice, concise way to do this
   
 # Assign each digit to a variable. 
 
